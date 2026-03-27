@@ -1,0 +1,14 @@
+{
+  "name": "zepphyr",
+  "owner": {
+    "name": "Alan Nguyen",
+    "url": "https://github.com/bug-breeder"
+  },
+  "plugins": [
+    {
+      "name": "zepphyr",
+      "description": "ZeppOS platform + ZeRoUI skills and reviewer agent for zepp watch apps",
+      "source": "."
+    }
+  ]
+}
