@@ -4,10 +4,24 @@ Claude Code plugin — ZeppOS platform skills, ZeRoUI skills, and zeppos-reviewe
 
 ## Install
 
-In any Claude Code session:
+Add the marketplace and install the plugin (once per machine):
 
 ```
-/plugin install github:bug-breeder/zepphyr
+/plugin marketplace add bug-breeder/zepphyr
+/plugin install zepphyr@zepphyr
+```
+
+Or, for project-level auto-install, add to `.claude/settings.json` in your repo:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "zepphyr": {
+      "source": { "source": "github", "repo": "bug-breeder/zepphyr" }
+    }
+  },
+  "enabledPlugins": { "zepphyr@zepphyr": true }
+}
 ```
 
 ## What's included
@@ -23,3 +37,12 @@ In any Claude Code session:
 ```
 /plugin marketplace update
 ```
+
+## References
+
+- [Create plugins](https://code.claude.com/docs/en/plugins)
+- [Create and distribute a plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces)
+- [Discover and install plugins](https://code.claude.com/docs/en/discover-plugins)
+- [Plugins reference](https://code.claude.com/docs/en/plugins-reference)
+- [Agent Skills](https://code.claude.com/docs/en/skills)
+- [Subagents](https://code.claude.com/docs/en/sub-agents)

@@ -1,6 +1,9 @@
 {
   "name": "zepphyr",
   "description": "ZeppOS platform + ZeRoUI skills and reviewer agent for zepp watch apps",
-  "skills": ["skills/zeppos-platform", "skills/zeroui"],
-  "agents": ["agents/zeppos-reviewer.md"]
+  "version": "1.0.0",
+  "author": {
+    "name": "Alan Nguyen",
+    "email": "anhngw@gmail.com"
+  }
 }
