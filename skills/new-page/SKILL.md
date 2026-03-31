@@ -1,8 +1,9 @@
 ---
 name: new-page
-description: Scaffold a new ZeppOS page using ZeRoUI. Creates the page file and registers it in app.json.
+description: Scaffolds a new ZeppOS page with ZeRoUI template and registers it in app.json. Only activate when explicitly invoked.
 argument-hint: <PageName>
 context: fork
+disable-model-invocation: true
 ---
 
 Scaffold a new ZeppOS page: $ARGUMENTS
@@ -65,4 +66,4 @@ Page({
 
 **Run:** `npm run verify` — expect 0 errors (lint + format + build).
 
-**Report:** created file path, app.json entry added, lint result.
+**Report:** created file path, app.json entry added, verify result.

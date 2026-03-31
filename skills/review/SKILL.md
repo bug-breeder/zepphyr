@@ -1,3 +1,10 @@
+---
+name: review
+description: Reviews a ZeppOS pull request using the zeppos-reviewer agent. Only activate when explicitly invoked.
+argument-hint: [PR#]
+disable-model-invocation: true
+---
+
 Review the pull request: $ARGUMENTS
 
 Use the `zepphyr:zeppos-reviewer` agent to perform this review.
