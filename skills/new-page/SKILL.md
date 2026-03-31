@@ -4,6 +4,7 @@ description: Scaffolds a new ZeppOS page with ZeRoUI template and registers it i
 argument-hint: <PageName>
 context: fork
 disable-model-invocation: true
+allowed-tools: Read, Glob, Edit, Write, Bash(npm run verify:*), Bash(git add:*), Bash(git commit:*)
 ---
 
 Scaffold a new ZeppOS page: $ARGUMENTS
