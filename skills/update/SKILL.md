@@ -6,9 +6,9 @@ disable-model-invocation: true
 
 Update zepphyr to the latest version:
 
-1. Clear the local marketplace cache so Claude Code re-fetches from GitHub:
+1. Pull the latest marketplace metadata from GitHub:
    ```bash
-   rm -rf ~/.claude/plugins/marketplaces/zepphyr/
+   git -C ~/.claude/plugins/marketplaces/zepphyr pull
    ```
 
-2. Tell the user: "Marketplace cache cleared. Now run `/plugin update zepphyr@zepphyr` to install the latest version."
+2. Tell the user: "Marketplace updated. Now run `/plugin update zepphyr@zepphyr` to install the latest version."
