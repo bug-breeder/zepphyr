@@ -9,4 +9,4 @@ Review the pull request: $ARGUMENTS
 
 Use the `zepphyr:zeppos-reviewer` agent to perform this review.
 If `$ARGUMENTS` contains a PR number, pass it to the agent.
-If `$ARGUMENTS` is empty, review the current branch's open PR.
+If `$ARGUMENTS` is empty, first run `gh pr view --json number --jq '.number'` to resolve the current branch's open PR number, then pass that number to the agent.
