@@ -22,7 +22,7 @@ Scaffold a new ZeppOS page: $ARGUMENTS
 /**
  * [PascalCase] page
  */
-import { renderPage, column, LAYOUT } from '@bug-breeder/zeroui';
+import { renderPage, LAYOUT } from '@bug-breeder/zeroui';
 // import { push, pop } from '@zos/router'; // uncomment when needed
 
 // Module-level state — MUST reset in onInit (persists across page visits)
@@ -44,9 +44,9 @@ Page({
     renderPage({
       layout: LAYOUT.FULL,
       title: '[PascalCase]',
-      buildFn() {
-        col = column(LAYOUT.FULL.MAIN, { scrollable: true });
-        col.sectionLabel('Section');
+      buildFn(c) {
+        col = c;
+        col.label('Section');
         col.chip('Item', { onPress: () => {} });
         col.finalize();
       },
@@ -54,10 +54,8 @@ Page({
   },
 
   onDestroy() {
-    if (col) {
-      col.destroyAll();
-      col = null;
-    }
+    col?.destroyAll();
+    col = null;
     // offGesture(); offKey(); vibrator.stop(); — if used
   },
 });
