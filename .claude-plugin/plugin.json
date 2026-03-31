@@ -1,9 +1,13 @@
 {
   "name": "zepphyr",
-  "description": "ZeppOS platform + ZeRoUI skills and reviewer agent for zepp watch apps",
+  "description": "ZeppOS platform + ZeRoUI skills and reviewer agent for Zepp smartwatch app development",
   "version": "1.1.0",
   "author": {
     "name": "Alan Nguyen",
     "email": "anhngw@gmail.com"
-  }
+  },
+  "homepage": "https://github.com/bug-breeder/zepphyr",
+  "repository": "https://github.com/bug-breeder/zepphyr",
+  "license": "MIT",
+  "keywords": ["zeppos", "zepp", "smartwatch", "wearable", "zeroui"]
 }
