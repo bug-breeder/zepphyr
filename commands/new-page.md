@@ -39,12 +39,11 @@ Page({
   },
 
   build() {
-    col = column(LAYOUT.FULL.MAIN, { scrollable: true });
-
     renderPage({
       layout: LAYOUT.FULL,
       title: '[PascalCase]',
       buildFn() {
+        col = column(LAYOUT.FULL.MAIN, { scrollable: true });
         col.sectionLabel('Section');
         col.chip('Item', { onPress: () => {} });
         col.finalize();
@@ -64,6 +63,6 @@ Page({
 
 **Register in `app.json`:** Add `"pages/<kebab-case>/index"` to `targets.common.module.page.pages`.
 
-**Run:** `npm run lint` — expect 0 errors.
+**Run:** `npm run verify` — expect 0 errors (lint + format + build).
 
 **Report:** created file path, app.json entry added, lint result.
